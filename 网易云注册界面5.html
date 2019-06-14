@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+        code,form,fieldset,legend,input,textarea,p,blockquote,
+        th,td{
+            margin:0;
+            padding:0;
+        }
+        .header{
+            width:1010px;
+            height:86px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        .header .logo{
+            width:647px;
+            height:28px;
+            background-image: url("image/glb_v2_r1_c1.png");
+            margin-top: 29px;
+            float: left;
+        }
+        .header .link{
+            width:70px;
+            height:28px;
+            float: right;
+            margin-top: 29px;
+            text-align: right;
+            line-height: 28px;
+            font-size: 14px;
+        }
+        .header .link a{
+            text-decoration: none;
+        }
+        .header .logo .a{
+            display: inline-block;
+            width:127px;
+            height:28px;
+        }
+        .header .logo .b{
+            display: inline-block;
+            width:131px;
+            height:28px;
+        }
+        .header .logo .c{
+            display: inline-block;
+            width:145px;
+            height:28px;
+        }
+        .center{
+            width:1010px;
+            height:660px;
+            /*background-color: green;*/
+            margin:0 auto;
+        }
+        .center .top{
+            width:1010px;
+            height:37px;
+            background-image: url("image/tp.png");
+        }
+        .center .top .left{
+            width:1010px;
+            height:37px;
+            background:url("image/tp1.png") no-repeat left 0;
+        }
+        .center .top .left .right{
+            width:1010px;
+            height:37px;
+            background: url("image/tp2.png") no-repeat right 0;
+            line-height: 37px;
+        }
+        .center .top .left .right p{
+            color: white;
+            font-size: 18px;
+            text-indent: 2em;
+        }
+        .center .bottom{
+            width:1010px;
+            height:622px;
+            /*background-color: #f14b0a;*/
+            border: 1px solid lightgray;
+            border-top: none;
+        }
+        .center .bottom .left{
+            width:675px;
+            height:622px;
+            /*background-color: coral;*/
+            float: left;
+            padding-left: 95px;
+            padding-top: 52px;
+            box-sizing: border-box;
+        }
+        .center .bottom .left .articletop{
+            width:580px;
+            height:70px;
+            /*background-color: mediumvioletred;*/
+        }
+        .center .bottom .left .articletop ul{
+            width:336px;
+            height:34px;
+            /*background-color: pink;*/
+            list-style: none;
+            background: url("image/tp6.png") no-repeat ;
+            margin: 0 auto;
+
+        }
+        .center .bottom .left .articletop ul li{
+            width:168px;
+            height:34px;
+            float: left;
+            line-height: 36px;
+            text-align: center;
+        }
+        .center .bottom .left .articletop ul li a{
+            display:inline-block;
+            width:168px;
+            height:34px;
+            text-decoration: none;
+            color: black;
+        }
+        .center .bottom .left .articlebottom{
+            width:580px;
+            height:482px;
+            /*background-color: greenyellow;*/
+        }
+        .center .bottom .left .articlebottom .text1{
+            width:460px;
+            height:28px;
+            margin-top: 12px;
+        }
+        .center .bottom .left .articlebottom .text2{
+            width:460px;
+            height:28px;
+            margin-top: 22px;
+        }
+        .center .bottom .left .articlebottom .text1 .span1{
+            width:94px;
+            height:28px;
+            float: left;
+            line-height: 28px;
+            text-align: right;
+        }
+        .center .bottom .left .articlebottom .text1 .star{
+            color: red;
+        }
+        .center .bottom .left .articlebottom .text1 .a{
+            width:340px;
+            height:28px;
+            float: right;
+        }
+        .center .bottom .left .articlebottom .text2 .a{
+            width:340px;
+            height:28px;
+            float: right;
+        }
+        .center .bottom .left .articlebottom .text1 .a .input1{
+            width:214px;
+            height:28px;
+            float: left;
+        }
+        .center .bottom .left .articlebottom .text1 .a .input2{
+            width:336px;
+            height:28px;
+        }
+        .center .bottom .left .articlebottom .text1 .a select{
+            width:108px;
+            height: 28px;
+        }
+        .center .bottom .left .articlebottom .text1 .a .img2{
+            width:114px;
+            height:50px;
+            display: inline-block;
+            background-color: #6bacd0;
+            float: left;
+            margin-left: 7px;
+            background: url("image/call.do.jpg");
+        }
+        .center .bottom .left .articlebottom .text2 .a .checkbox{
+            margin-top: 6px;
+            display: inline-block;
+            float: left;
+        }
+        .center .bottom .left .articlebottom p{
+            font-size: 13px;
+            margin-left: 120px;
+            line-height: 30px;
+            color:darkgray;
+        }
+        .center .bottom .left .articlebottom .p2{
+            font-size: 13px;
+            margin-left: 200px;
+            line-height: 10px;
+            color:darkgray;
+        }
+        .center .bottom .left .articlebottom .p3{
+            display:inline-block;
+            margin-left: 10px;
+           font-size: 16px;
+            float: left;
+        }
+        .center .bottom .left .articlebottom .text1 .a a{
+            text-decoration: none;
+        }
+        .center .bottom .right{
+            width:335px;
+            height:623px;
+            float: right;
+            background-color:whitesmoke;
+            padding-top: 127px;
+            padding-left: 60px;
+            box-sizing: border-box;
+            border: 1px solid lightgray;
+            border-top: none;
+        }
+        .center .bottom .left .articlebottom input[type=submit]{
+            width:119px;
+            height: 37px;
+            font-size: 15px ;
+            background: url("image/tp4.png") no-repeat -288px -360px;
+            border:none;
+            color: white;
+            margin-left:118px;
+            margin-top: 15px;
+
+
+        }
+        .center .bottom .right .img{
+            width:200px;
+            height:300px;
+            background: url("image/tp7.png") no-repeat;
+        }
+        .footer{
+            width:1010px;
+            height:118px;
+            margin:0 auto;
+            padding-top: 10px;
+        }
+        .footer .footer1{
+            width:450px;
+            height:40px;
+            margin: 0 auto;
+            font-size: 15px;
+            padding-left: 28px;
+            color: darkgray;
+        }
+        .footer .footer1 a{
+            text-decoration: none;
+            color: darkgray;
+        }
+        .footer .footer1 p{
+            display: inline-block;
+            color: darkgray;
+        }
+        .footer .footer2{
+            margin: 0 auto;
+            width:450px;
+            font-size: 14px;
+            color: darkgray;
+        }
+        .footer .footer2 span{
+            display: inline-block;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <a class="a" href="#" title="网易163免费邮"></a>
+        <a class="b" href="#" title="网易126免费邮"></a>
+        <a class="c" href="#" title="网易Yeah.net免费邮"></a>
+    </div>
+    <div class="link">
+        <a href="#">反馈意见</a>
+    </div>
+</div>
+<div class="center">
+    <div class="top">
+        <div class="left">
+            <div class="right"><p>欢迎注册网易邮箱！邮件地址可以登录使用其他网易旗下产品。</p></div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="left">
+            <div class="articletop">
+                <ul>
+                    <li>注册免费邮箱</li>
+                    <li><a href="#">注册VIP邮箱</a></li>
+                </ul>
+            </div>
+            <div class="articlebottom">
+                <div class="text1">
+                    <span class="span1"><span class="star">*</span>邮件地址</span>
+                    <div class="a">
+                        <input class="input1" type="text">@<select>
+                        <option value="163.com">163.com</option>
+                        <option value="126.com">126.com</option>
+                        <option value="yeah.net">yeah.net</option>
+                    </select>
+                    </div>
+                </div>
+                <p>6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+
+                <div class="text1">
+                    <span class="span1"><span class="star">*</span>密码</span>
+                    <div class="a">
+                        <input class="input2" type="password">
+                    </div>
+                </div>
+                <p>6~16个字符，区分大小写</p>
+
+                <div class="text1">
+                    <span class="span1"><span class="star">*</span>确认密码</span>
+                    <div class="a">
+                        <input class="input2" type="password">
+                    </div>
+                </div>
+                <p>请再次填写密码</p>
+
+                <div class="text1">
+                    <span class="span1"><span class="star">*</span>验证码</span>
+                    <div class="a">
+                        <input class="input1" type="text">
+                        <div class="img2"></div>
+                    </div>
+                </div>
+                <p>请填写图片中的字符，不区分大小写</p>
+
+                <div class="text1">
+                    <span class="span1"><span class="star">*</span>手机号码</span>
+                    <div class="a">
+                        <input class="input2" type="text" value="+86">
+                    </div>
+                </div>
+                <p>请编辑短信：222发送到10690163222，以确保账号安全</p>
+                <p class="p2">（短信费用由运营商收取）</p>
+
+                <div class="text2">
+                    <div class="a">
+                        <input class="checkbox" type="checkbox"><p class="p3">同意<a href="#">"服务条款"</a>和<a href="#">"隐私权相关政策"</a></p>
+                    </div>
+                </div>
+
+               <input type="submit" value="立即注册">
+            </div>
+        </div>
+        <div class="right">
+            <div class="img"></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer1">
+        <a href="#">关于网易</a>
+        <a href="#">客户服务</a>
+        <a href="#">隐私政策</a>
+        |
+        <p>网易公司版权所有 © 1997-2019</p>
+    </div>
+    <div class="footer2"><span>数据来源：艾媒咨询《2015-2018中国个人邮箱行业研究报告》 </span></div>
+</div>
+</body>
+</html>
